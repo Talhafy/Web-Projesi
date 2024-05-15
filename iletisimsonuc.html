@@ -51,56 +51,51 @@
     <!--İletişim-->
     <br><br>
     <section class="Hobiler">
-        <h3 id="h3gri">İLETİŞİM</h3>
-        <br><br>
-        <form onsubmit="event.preventDefault()">
-            <table class="table table-bordered">
+        <h3 id="h3gri">GÖNDERİLDİ</h3>
+        <br></br><br></br>
+        <table class="table table-bordered">
 
-                <tr>
-                    <td>Ad</td>
-                    <td><input type="text" id="iname" class="input-field" placeholder="İsim Soyisim"></td>
-                </tr>
-                <tr>
-                    <td>Soyad</td>
-                    <td><input type="tex" id="isurn" class="input-field" placeholder="İsim Soyisim"></td>
-                </tr>
-                <tr>
-                    <td>Email</td>
-                    <td><input type="email" id="iemail" class="input-field" placeholder="Email"></td>
-                </tr>
-                <tr>
-                    <td>Tel</td>
-                    <td><input type="number" id="iphone" class="input-field" placeholder="+90"></td>
-                </tr>
-                
+            <tr>
+                <td class="tip">Ad</td>
+                <td id="isname"></td>
+            </tr>
+            <tr>
+                <td>Soyad</td>
+                <td id="issurn"></td>
+            </tr>s
+            <tr>
+                <td>Email</td>
+                <td id="isemail"></td>
+            </tr>
+            <tr>
+                <td>Tel</td>
+                <td id="isphone"></td>
+            </tr>
+            <tr>
+                <td>Mesaj</td>
+                <td id="istext"></td>
+            </tr>
 
+        </table> 
 
-            </table>
-            <br><br>
-            <textarea name="mesage" id="itext" cols="50" rows="5" placeholder="İletişime Geçin"></textarea>
-            <button type="submit" class="ilet-btn" onclick="iletisim()">Gönder</button>
-            <button type="reset" class="ilet-btn">Temizle</button>
-        </form>
     </section>
     <!--İletişim-->
-
     <script>
-        function iletisim() {
-            var iemail = document.getElementById("iemail").value;
-            var iname = document.getElementById("iname").value;
-            var isurn = document.getElementById("isurn").value;
-            var iphone = document.getElementById("iphone").value;
-            var itext = document.getElementById("itext").value;
+        var iname=localStorage.getItem("iname");
+        var iemail=localStorage.getItem("iemail");
+        var isurn=localStorage.getItem("isurn");
+        var iphone=localStorage.getItem("iphone");
+        var itext=localStorage.getItem("itext");
 
-            localStorage.setItem("iemail",iemail);
-            localStorage.setItem("iname",iname);
-            localStorage.setItem("isurn",isurn);
-            localStorage.setItem("iphone",iphone);
-            localStorage.setItem("itext",itext);
+        document.getElementById("isname").innerText=iname;
+        document.getElementById("issurn").innerText=iemail;
+        document.getElementById("isemail").innerText=isurn;
+        document.getElementById("isphone").innerText=iphone;
+        document.getElementById("istext").innerText=itext;
 
-            window.location.href = "iletisimsonuc.html";
-        }
+
     </script>
+
 </body>
 
 </html>
