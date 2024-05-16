@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main">
+        <div class="form-box">
+            <div class="button-box">
+                <div id="btn"></div>
+            </div>
+
+            <form id="Login" class="input-group" onsubmit="event.preventDefault();">
+                <input type="text" id="lnick" class="input-field" placeholder="Kullanıcı Adı (E-posta)" required>
+                <input type="password" id="lpassword" class="input-field" placeholder="Şifre" required>
+                <button type="submit" class="submit-btn" onclick="girisYap()">Giriş Yap</button>
+            </form>
+        </div>
+    </div>
+    
+    <script>
+        var x=document.getElementById("Login");
+        var y=document.getElementById("btn");
+
+        function login(){
+            x.style.left="50px";
+            y.style.left="0px";
+        }
+
+    </script>
+
+    <script>
+    var kayitKullaniciAdi = "B231210583@sakarya.edu.tr";
+    var kayitSifre = "B231210583";
+    
+    function girisYap() {
+      var girisKullaniciAdi = document.getElementById("lnick").value;
+      var girisSifre = document.getElementById("lpassword").value;
+      
+      // E-posta kontrolü
+      var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      if (!emailRegex.test(girisKullaniciAdi)) {
+        alert("Geçerli bir e-posta adresi girin");
+        return;
+      }
+
+      // Boşluk kontrolü
+      if (girisKullaniciAdi.trim() === '' || girisSifre.trim() === '') {
+        alert("Kullanıcı adı veya şifre boş olamaz");
+        return;
+      }
+      
+      if (girisKullaniciAdi === kayitKullaniciAdi && girisSifre === kayitSifre) {
+        alert(`Hoşgeldiniz ${kayitKullaniciAdi}` );
+        
+        // Giriş başarılı olduğunda index.html sayfasına yönlendirme yapılabilir.
+        window.location.href = "index.html";
+      } else {
+        alert("Hatalı kullanıcı adı veya şifre!");
+      }
+    }
+    </script>
+</body>
+</html>
