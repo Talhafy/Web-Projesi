@@ -1,0 +1,306 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#perde {
+    height: 600px;
+    background-color: black;
+    opacity: 0.8;
+}
+
+#content {
+    color: white;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    /*içeriği tam orta noktasına göre konumlandırmak için*/
+    transform: translate(-50%, -50%);
+    font-weight: 700;
+    font-size: 60px;
+}
+
+.Hobiler {
+    padding: 50px;
+    text-align: center;
+    text-transform: capitalize;
+    font-weight: 600;
+}
+
+#h3gri {
+    font-size: 60px;
+    font-weight: 600;
+    color: #444;
+}
+
+h1 {
+    font-size: 60px;
+    font-weight: 600;
+}
+
+#container {
+    width: 1200px;
+    height: auto;
+    margin-bottom: 50px;
+    ;
+}
+
+#sol {
+
+    float: left;
+    border-right: 3px solid #444;
+    font-size: 30px;
+    width: 400px;
+    color: #444;
+}
+
+#h5sol {
+    font-weight: 200;
+    font-size: 30px;
+}
+
+#sag {
+    float: right;
+    width: 1200px;
+    text-align: center;
+    letter-spacing: 1px;
+    font-size: 15px;
+
+}
+
+.img-fluid {
+    margin-left: 200px;
+    max-height: 600px;
+    margin-bottom: 50px;
+
+}
+
+.mt100 {
+    margin-top: 10px;
+}
+
+hr {
+    font-size: 1000px;
+    color: #df0606;
+    opacity: 1;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+
+#sperde {
+    height: 800px;
+    background-color: black;
+    opacity: 0.5;
+}
+
+#slider {
+    height: 800px;
+    background: black;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+}
+
+#scontent {
+
+    color: black;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    /*içeriği tam orta noktasına göre konumlandırmak için*/
+    transform: translate(-50%, -50%);
+    font-weight: 700;
+    font-size: x-large;
+    text-decoration: none;
+
+}
+
+.bcw {
+    background-color: hsla(188, 92%, 37%, 0.404);
+
+}
+
+#arkaplan {
+    height: 600px;
+    background-image: url("resimler/mirasımız.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.orta {
+    text-align: center;
+
+    margin-left: 250px;
+}
+.app {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background: rgb(0, 0, 0, .7);
+    height: 100vh;
+    color: #fff;
+
+}
+
+.header {
+    margin-top: 40px;
+    padding: 50px 20px 30px 20px;
+}
+
+.header h1 {
+    font-size: 100px;
+    color: orange;
+    text-shadow: 1px 3px black;
+}
+
+.header input {
+    width: 100%;
+    padding: 8px;
+    text-align: center;
+    border-color: orange;
+    background: transparent;
+    font-size: 20px;
+    color: #fff;
+    outline: orange;
+}
+
+.city {
+    font-weight: 500;
+    font-size: 60px;
+    margin-bottom: 8px;
+    text-shadow: 1px 3px black;
+}
+
+.temp {
+    font-size: 100px;
+    margin-bottom: 8px;
+    text-shadow: 1px 3px black;
+    font-weight: 500;
+}
+
+.desc {
+    font-weight: 500;
+    font-size: 30px;
+    margin-bottom: 10px;
+    text-shadow: 1px 3px black;
+}
+
+.minmax {
+    font-weight: 500;
+    font-size: 50px;
+    margin-bottom: 10px;
+    text-shadow: 1px 3px black;
+}
+
+.main {
+    width: 100%;
+    height: 100%;
+    background-image: url(resimler/login.jpg);
+    position: absolute;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+
+
+}
+
+.form-box {
+    width: 380px;
+    height: 480px;
+    position: relative;
+    background: rgba(255, 255, 255, 0.71);
+    border-radius: 35px;
+    margin: 6% auto;
+    padding: 10px;
+    overflow: hidden;
+}
+
+.button-box button {
+    color: #fff;
+}
+
+.button-box {
+    width: 220px;
+    margin: 35px auto;
+    position: relative;
+    box-shadow: 0 0 20px 9px #444;
+    border-radius: 35px;
+
+}
+
+.toggle-btn {
+    position: relative;
+    padding: 20px 20px;
+    border: none;
+    background: transparent;
+    outline: none;
+    font-size: 15px;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+#btn {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 110px;
+    height: 100%;
+    background: linear-gradient(to right, #efa000, #9f3000);
+    border-radius: 35px;
+    transition: .5s;
+
+}
+
+
+.input-group {
+    position: absolute;
+    top: 180px;
+    width: 280px;
+    transition: .5s;
+
+}
+
+.input-field {
+    width: 100%;
+    padding: 10px 0;
+    border: none;
+    margin: 5px 0;
+    background: transparent;
+    border-bottom: 1px solid orange;
+    outline: none;
+}
+
+#Login {
+    left: 50px;
+
+}
+
+
+#itext {
+    border-color: orange;
+    outline: none;
+    margin-right: 100px;
+}
+
+.ilet-btn {
+
+    width: 30%;
+    padding: 10px;
+    border: none;
+    background: linear-gradient(to right, #efa000, #9f3000);
+    border-radius: 35px;
+    cursor: pointer;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 600;
+    margin: auto;
+    outline: none;
+}
+#makale{
+    padding: 10px;
+    margin-left: 200px;
+}

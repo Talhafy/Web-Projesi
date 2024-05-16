@@ -9,13 +9,13 @@ $girisSifre = $_POST["password"];
 
 // E-posta kontrolü
 if (!filter_var($girisKullaniciAdi, FILTER_VALIDATE_EMAIL)) {
-    header("Location: login.html"); // Eğer e-posta formatında değilse giriş sayfasına geri yönlendir
+    header("Location: girisyap.html"); // Eğer e-posta formatında değilse giriş sayfasına geri yönlendir
     exit();
 }
 
 // Boşluk kontrolü
 if (empty($girisKullaniciAdi) || empty($girisSifre)) {
-    header("Location: login.html"); // Eğer alanlar boşsa giriş sayfasına geri yönlendir
+    header("Location: girisyap.html"); // Eğer alanlar boşsa giriş sayfasına geri yönlendir
     exit();
 }
 
@@ -23,7 +23,7 @@ if (empty($girisKullaniciAdi) || empty($girisSifre)) {
 if ($girisKullaniciAdi === $kayitKullaniciAdi && $girisSifre === $kayitSifre) {
     echo "Hoşgeldiniz  " . $kayitKullaniciAdi; // Giriş başarılı mesajı
 } else {
-    header("Location: login.html"); // Giriş başarısızsa giriş sayfasına geri yönlendir
+    header("Location: girisyap.html"); // Giriş başarısızsa giriş sayfasına geri yönlendir
     exit();
 }
 ?>
